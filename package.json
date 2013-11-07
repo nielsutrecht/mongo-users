@@ -16,7 +16,8 @@
   },
   "dependencies" : {
     "mongoose"   :  "3.6.x",
-    "async" :  "0.2.x"
+    "async" :  "0.2.x",
+	"bcrypt-nodejs": "0.0.3"
   },  
   "devDependencies": {
     "colors": "~0.6.0-1"
@@ -25,7 +26,7 @@
     "type": "git",
     "url": "https://github.com/nielsutrecht/mongo-users.git"
   },
-  "readme": "redis-users - a node.js redis user storage library",
+  "readme": "mongo-users - a node.js mongo user storage library",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/nielsutrecht/mongo-users/issues"
