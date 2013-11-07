@@ -1,0 +1,35 @@
+{
+  "name": "mongo-users",
+  "version": "0.0.1",
+  "description": "MongoDB user storage library",
+  "keywords": [
+    "mongodb",
+    "users"
+  ],
+  "author": {
+    "name": "Niels Dommerholt",
+    "email": "nielsutrecht@gmail.com"
+  },
+  "main": "./mongo-users.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "dependencies" : {
+    "mongoose"   :  "3.6.x",
+    "async" :  "0.2.x"
+  },  
+  "devDependencies": {
+    "colors": "~0.6.0-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nielsutrecht/mongo-users.git"
+  },
+  "readme": "redis-users - a node.js redis user storage library",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/nielsutrecht/mongo-users/issues"
+  },
+  "_id": "mongo-users@0.0.1",
+  "_from": "mongo-users@0.x"
+}
