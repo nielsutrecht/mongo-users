@@ -18,8 +18,11 @@ exports.addToSchema = function(object)
        
 exports.init = function(url)
 {
-	mongoose.connect(url);
-	User = mongoose.model('User', userSchema);
+	if(!User)
+	{
+		mongoose.connect(url);
+		User = mongoose.model('User', userSchema);
+	}
 };
 
 exports.getVersion = function () {
@@ -55,6 +58,10 @@ exports.findByMail = function(email, callback)
 	User.findOne({ email: email}, callback);
 }
 
+exports.find = function(query, callback)
+{
+	User.find(query, callback);
+}
 
 
 function error(error)
